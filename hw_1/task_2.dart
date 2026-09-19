@@ -13,6 +13,7 @@ bool isLeapYear(int year) {
 
   return false;
 }
+// фыаца
 
 int daysInMonth(int month, int year) {
   if (month == 2) {
