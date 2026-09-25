@@ -37,7 +37,7 @@ String nextDate(int day, int month, int year) {
   }
 
   if (day < 1 || day > daysInMonth(month, year)) {
-    return "invalid date";
+    return "$day.$month.$year --> invalid date";
   }
 
   day++;
@@ -57,4 +57,13 @@ String nextDate(int day, int month, int year) {
 
 void main() {
   print(nextDate(28, 2, 2024));
+  print(nextDate(05,09,2026));
+  print(nextDate(28,02,2024));
+  print(nextDate(28,02,2026));
+  print(nextDate(29,02,2026));
+  print(nextDate(28,02,2100));
+  print(nextDate(28,02,2100));
+  print(nextDate(31,12,2025));
+
+  
 }

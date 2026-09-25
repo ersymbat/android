@@ -10,6 +10,7 @@ class Book {
     required this.price,
     this.isBorrowed = false,
   });
+  
 }
 
 class Library {
@@ -45,15 +46,15 @@ void main() {
   ));
 
   library.addBook(Book(
-    title: "1984",
-    author: "George Orwell",
-    price: 15.0,
+    title: "Baqytsyz Zhamal",
+    author: "Mirzhakyp Dulatuly",
+    price: 45.0,
   ));
 
   library.addBook(Book(
-    title: "The Alchemist",
-    author: "Paulo Coelho",
-    price: 18.0,
+    title: "The way of the Abai",
+    author: "Mukhtar Auezov",
+    price: 56.0,
   ));
 
   print("Available books:");

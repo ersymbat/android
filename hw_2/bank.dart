@@ -29,9 +29,13 @@ void main() {
 
   balance = deposit(currentBalance: balance, amount: depositAmount);
 
-  balance = withdraw(name: "Nesibeli", currentBalance: balance, amount: 200.0, pinCode: 1111);
+  balance = withdraw(name: "Nesibeli",
+  currentBalance: balance,
+  amount: 200.0, pinCode: 1111);
 
-  balance = withdraw(name: "Nesibeli", currentBalance: balance, amount: 300.0, pinCode: 1234);
+  balance = withdraw(name: "Nesibeli",
+  currentBalance: balance,
+  amount: 300.0, pinCode: 1234);
 }
 
 void checkBalance({required String name, required double balance}) => print("$name, your current balance is: $balance");

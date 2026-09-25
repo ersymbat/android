@@ -34,7 +34,7 @@ class Audiobook extends MediaItem with Downloadable {
           title: title,
           price: price,
         );
-
+        
   @override
   String getDetails() {
     return "$title - $price\$ - ${durationHours}h - Narrator: $narrator";
@@ -104,10 +104,10 @@ void main() {
 
   Audiobook audiobook = Audiobook(
     id: "1",
-    title: "Harry Potter",
+    title: "Atack on Titan",
     price: 15.0,
     durationHours: 8.5,
-    narrator: "Stephen Fry",
+    narrator: "Isayama Hajime",
   );
 
   EBook ebook = EBook(
