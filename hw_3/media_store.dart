@@ -86,13 +86,10 @@ class ShoppingCart {
   for (var item in _items) {
     print(item.getDetails());
 
-    if (item is Audiobook) {
-      item.download(item.title);
+    if (item is Downloadable) {
+      (item as Downloadable).download(item.title);
     }
 
-    if (item is EBook) {
-      item.download(item.title);
-    }
   }
 
   print("Total with tax: ${calculateTotalWithTax()}");
